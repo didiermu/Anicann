@@ -1,0 +1,338 @@
+.home--hero {
+    @include hero;
+}
+
+
+.home--noticias {
+    // transform: translateY(-80px);
+    margin: -80px 0 40px;
+    
+
+    &--title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h5, a{
+            color: #fff;
+        }
+        
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    
+    &--notas{
+        padding: 0;
+
+        a{
+            display: flex;
+            justify-content: center
+        }
+
+        &__nota{
+            background: #FFFFFF;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
+            -moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
+            box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
+            width: 85%;
+            margin: 20px 0 30px;
+
+            &__copy{
+                color: $textoNegro;
+                padding:15px 0 15px 30px;
+
+                h4{
+                    position: relative;
+
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        left: -30px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 25px;
+                        height: 2px;
+                        background: $primario;
+                    }
+                }
+            }
+
+            &__img{
+                height: 130px;
+                width: 100%;
+        
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+.home--about{
+    padding: 30px 0;
+
+    h5{
+        text-align: center;
+        background: url("../../img/planta-back.png") no-repeat center / contain;
+        padding: 30px 20px;
+        position: relative;
+
+        &:before, &:after{
+            content: "";
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            background: url("../../img/linea-verde.svg") no-repeat left top / contain;
+        }
+
+        &:before{
+            top: 0;
+            left: 0;
+        }
+
+        &:after{
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+}
+
+
+.home--beneficios{
+    padding: 50px 0;
+    overflow-x: hidden;
+
+    [class*="col-"]{
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    img{
+        transform: scale(1.1);
+    }
+
+    &--copy{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 88%;
+        padding: 20px;
+            
+       
+        &:before, &:after{
+            content: "";
+            width: 100%;
+            height: 80px;
+            position: absolute;
+        }
+
+        &:before{
+            top: 0;
+            left: 0;
+            background: url("../../img/linea-blanca.svg") no-repeat left top / contain;
+        }
+
+        &:after{
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+            background: url("../../img/linea-verde.svg") no-repeat left top / contain;
+        }
+
+        h2{
+            font-size:calc(30px + 10 * ((100vw - 320px) / 992));
+            line-height:calc(40px + 10 * ((100vw - 320px) / 992));
+            margin:0 auto 0;
+            color: #fff;
+            font-family: $primaria-bold;
+            
+
+
+            span{
+                display: block;
+                font-size:calc(40px + 10 * ((100vw - 320px) / 992));
+                font-family: $primaria-bold;
+            }
+        }
+
+        .boton{
+            align-self: flex-end;
+            margin: 20px 0 0;
+        }
+    }
+}
+
+
+.home--cita{
+    background: url("../../img/back-cita.jpg") no-repeat center / cover fixed;
+    color: #fff;
+    padding: 30px 0;
+
+    h4{
+        position: relative;
+        top: 10px;
+
+        &:before{
+            content: "";
+            background: url("../../img/icon-quotes.svg") no-repeat center / contain;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: -25px;
+            left: 0;
+        }
+    }
+
+    &--autor{
+        margin: 20px 0 0;
+
+        &--copy{
+            border-top: 2px solid $primario;
+            width: 60%;
+            padding: 20px 0;
+        }
+
+        h6{
+            margin: 5px 0;
+            font-size:calc(12px + 10 * ((100vw - 320px) / 992));
+            line-height:calc(18px + 10 * ((100vw - 320px) / 992));
+        }
+
+        img{
+            position: absolute;
+            bottom: -28px;
+            right: 25px;
+            width: 35%;
+        }
+    }
+}
+
+
+.home--aplicacion{
+    padding: 30px 0;
+
+    h2{
+        text-align: right;
+        position: relative;
+        padding-right: 60px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            right: -15px;
+            bottom: 10px;
+            height: 2px;
+            width: 60px;
+            background: $primario;
+        }
+
+        span{
+            font-size:calc(40px + 10 * ((100vw - 320px) / 992));
+            display: block;
+        }
+    }
+
+    &--cards{
+        padding: 20px 0;
+
+        img{
+            margin: 20px auto;
+        }
+
+        h1{
+            color: $secundario;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.home--info{
+    background: url("../../img/back-info.jpg") no-repeat center / cover fixed;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+
+    &--copy{
+        border-top: 2px solid $primario;
+        padding: 20px 0 0;
+        margin: 20px auto 0;
+
+        &--links{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px auto;
+    
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                h5{
+                    margin: 0 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+#modal-newsletter{
+    
+    .modal-body{
+        padding: 30px 30px 50px;
+        overflow-x: hidden;
+    }
+
+    h3{
+        position: relative;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            left: -35px;
+            bottom: 10px;
+            height: 2px;
+            width: 30px;
+            background: $primario;
+        }
+    }
+
+    .cajaInput{
+        margin: 20px auto;
+    }
+
+    .boton{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .mancha{
+        top: 60%;
+        right: -80%;
+        transform: scale(.5);
+    }
+}

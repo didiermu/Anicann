@@ -1,0 +1,97 @@
+.header{
+    // background: url("../../img/back-header.svg") no-repeat center / cover;
+    min-height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    background: rgba(21, 86, 40, 0.9);
+    clip-path: ellipse(100% 55% at 48% 44%);
+
+    // &.headerOn{
+    //     background: rgba(21, 86, 40, .8) !important;
+    // }
+
+    .container{
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        display: flex;
+        padding-top: 5px;
+
+        .row{
+            width: 100%;
+
+            [class*="col-"]{
+                padding: 0;
+            }
+        }
+    }
+
+    
+    &--logo{
+        img{
+            max-width: 100%;
+        }
+    }
+    
+    &--navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+
+        
+        .btn{
+            width: 40px;
+            height: 40px;
+            background: url("../../img/icon-burguer.svg") no-repeat center / 30px;
+            transition: .2s ease-in-out all;
+
+            &.nav-on{
+                background: url("../img/icons/icon-close.svg") no-repeat center / 30px;
+            }
+        }
+    }
+
+    #navbarNav{
+        padding: 20px 15px;
+        opacity: 1;
+        
+
+        ul{
+            max-width: 720px;
+            padding:0;
+            margin: 20px auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li{
+                text-align: right;
+                list-style: none;
+                margin-bottom: 15px;
+                transition: .1s ease-in-out all;
+                font-size: 20px;
+                width: max-content;
+                color: #fff;
+                text-transform: uppercase;
+                font-size:calc(16px + 2 * ((100vw - 320px) / 992));
+
+                a{
+                    color: inherit;
+                    
+                }
+
+            }
+        }
+
+        &--redes{
+            img{
+                margin: 10px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,205 @@
+- titulo = "Anicann"
+
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+
+    body.home
+        include includes/header.pug
+
+        section.home--hero
+
+            .container 
+                .row
+                    .col-12.col-lg-7
+                        svg(width='0' height='0')
+                            defs
+                                clipPath#myCurve(clipPathUnits='objectBoundingBox')
+                                    path(d='M 0,0 L 1,0 L 10, 10 C 1 1, 1.5 .35, 0 1 Z')
+                        
+                        h1 Somos la primera Asociación Mexicana de la Industria del Cannabis
+
+        section.home--noticias
+            .container
+                .row
+                    .col-12.home--noticias--title
+                        h5 Últimas noticias
+                        a(href="#!") Más noticias
+
+                    .col-12.home--noticias--notas
+                        .owl-carousel.owl-theme#carrusel-noticias
+                            a(href="#!")
+                                .item.home--noticias--notas__nota
+                                    .home--noticias--notas__nota__img
+                                        img(src="../img/noticia.jpg", alt="")
+
+                                    .home--noticias--notas__nota__copy
+                                        h4 
+                                            b Titulo nota
+                                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+
+
+                            a(href="#!")
+                                .item.home--noticias--notas__nota
+                                    .home--noticias--notas__nota__img
+                                        img(src="../img/noticia.jpg", alt="")
+
+                                    .home--noticias--notas__nota__copy
+                                        h4 
+                                            b Titulo nota
+                                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+
+
+
+                            a(href="#!")
+                                .item.home--noticias--notas__nota
+                                    .home--noticias--notas__nota__img
+                                        img(src="../img/noticia.jpg", alt="")
+
+                                    .home--noticias--notas__nota__copy
+                                        h4 
+                                            b Titulo nota
+                                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+
+        section.home--about
+            .container
+                .row.justify-content-center
+                    .col-12.col-lg-10
+                        h5 
+                            b Nuestro objetivo es impulsar la "economía verde" de México. ANICANN es conformada por un grupo de emprendedores y empresarios comprometidos con el desarrollo de la industria del cannabis mexicana
+
+        section.home--beneficios
+            .container
+                .row
+                    .col-12
+                        img.img-fluid(src="../img/banner-2.png", alt="")
+
+                        .home--beneficios--copy
+                            h2 Conoce los beneficios de la 
+                                span Cannabis
+
+                            a(href="#!")
+                                button.boton.boton-on Ver mas
+
+        section.home--cita
+            .container
+                .row
+                    .col-12.col-lg-5
+                        h4 Al cannabis hay que verlo  y analizarlo primero como un producto agrícola; si no se ve así no visualizas las grandes ventajas que tiene el país para producir"
+                    
+                    .col-12.home--cita--autor
+                        .home--cita--autor--copy
+                            h5 Guillermo Nieto
+                            h6 Presidente de la Asociación Nacional de la Industria del Cannabis
+
+                        img.img-fluid(src="../img/señor.png", alt="Anicann Presidente")
+
+        section.home--aplicacion
+            .container
+                .row
+                    .col-12
+                        h2 
+                            b Conoce su
+                            span 
+                                b aplicación
+
+                .row.home--aplicacion--cards
+                    .col-12.col-lg-7
+                        img.img-fluid(src="../img/app-1.png", alt="Anicann aplicacion")
+                    
+                    .col-12.col-lg-5
+                        h1.h1-big 
+                            b Médico
+
+                        h4 El uso y beneficios del cannabis en la industria farmacéutica y la salud
+
+                .row.home--aplicacion--cards#app-industrial
+                    .col-12.col-lg-7
+                        img.img-fluid(src="../img/app-2.png", alt="Anicann aplicacion")
+                    
+                    .col-12.col-lg-5
+                        h1.h1-big 
+                            b Industrial
+                            
+                        h4 El úso del cáñamo para la producción en la industria del país
+
+                .row.home--aplicacion--cards
+                    .col-12.col-lg-7
+                        img.img-fluid(src="../img/app-3.png", alt="Anicann aplicacion")
+                    
+                    .col-12.col-lg-5
+                        h1.h1-big 
+                            b Agricola
+                            
+                        h4 El uso y beneficios del cannabis en la industria farmacéutica y la salud
+               
+        section.home--info
+                .row.justify-content-center
+                    .col-12.col-lg-6
+                        h3
+                            b CCATID
+                        
+                        h4 Clúster Cannábico de Alta Tecnología, investigación y Desarrollo.
+
+                        .home--info--copy
+                            h5 Cónoce más de la investigación
+                            
+                            .home--info--copy--links
+                                a(href="#!")
+                                    img(src="../img/icon-eye.svg", alt="")
+                                    h5 Leer más
+                                
+                                a(href="#!")
+                                    img(src="../img/icon-eye.svg", alt="")
+                                    h5 Infografía
+
+        .modal.fade#modal-newsletter(tabindex='-1' role='dialog')
+            .modal-dialog.modal-dialog-centered.modal-xl(role='document')
+                .modal-content
+                    .modal-header
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            img(src="../img/icon-closes-green.svg", alt="",aria-hidden='true')
+
+                    .modal-body
+                        .row.justify-content-center
+                            .col-12.col-lg-10
+                                h3 
+                                    b ¡Suscribete!
+                                h5 Dejanos tu correo electrónico y recibe nuestras noticias más recientes
+
+                        .row.justify-content-center
+                            .col-12.col-lg-8
+                                form#form-newsletter
+                                    .cajaInput
+                                        input.input#input-name(type="text", name="", placeholder="Nombre")
+                                    
+                                    .cajaInput
+                                        input.input#input-apellido(type="text", name="", placeholder="Apellido")
+
+                                    .cajaInput
+                                        input.input#input-edad(type="text", name="", placeholder="Edad")
+                                    
+                                    .cajaInput
+                                        input.input#input-email(type="text", name="", placeholder="Email")
+
+                                    input.boton.boton-on#boton-enviar-news(type="button", value="Enviar")
+                                
+                                .mancha
+                                    img.img-fluid#mancha1(src="../img/mancha1.svg", alt="")
+                                    img.img-fluid#mancha2(src="../img/mancha2.svg", alt="")
+                    
+        include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+

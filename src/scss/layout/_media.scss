@@ -1,0 +1,122 @@
+
+body {
+
+    @media (min-width:992px) {
+
+        %h1 {
+            font-size:calc(40px + 10 * ((100vw - 992px) / 1280));
+            line-height:calc(50px + 10 * ((100vw - 992px) / 1280));
+        }
+
+        //// HEADER
+
+        .header{
+            height: 110px;
+            
+            .container{
+                align-items: baseline;
+            }
+
+            &--logo{
+                align-self: flex-start;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+            
+            &--navegacion {
+                .navbar-expand-lg{
+                    width: 100%;
+                }
+            }
+
+            #navbarNav{
+                position: relative;
+                top: auto;
+                left: auto;
+                width: auto;
+                padding: initial;
+                background: transparent;
+                align-self: flex-end;
+
+                ul{
+                    max-width: none;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    li{
+                        margin:0 15px 0 0;
+
+                    }
+                }
+
+                &--redes{
+                    img{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+
+
+        /// HOME
+
+        
+        .home--hero {
+            
+            [class*="col-"]{
+                height: 650px;
+            }
+        }
+
+
+        .home--noticias{
+            &--notas{
+                &__nota{
+                    height: 315px;
+                }
+            }
+        }
+
+
+        .home--aplicacion{
+            &--cards{
+                &#app-industrial{
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+
+        #modal-newsletter{
+            form{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .cajaInput{
+                margin: 20px 10px;
+                flex: 0 0 40%
+            }
+        
+            .boton{
+                flex: 0 0 100%
+            }
+        
+            .mancha{
+                top: 60%;
+                right: -80%;
+                transform: scale(.5);
+            }
+            
+        }
+
+    }// 996
+
+
+}

@@ -1,0 +1,61 @@
+// color
+
+$primario: #287B40;
+$secundario: #155628;
+$textoNegro: #2F2F2F;
+
+
+// FONTS
+
+$primaria-regular: 'Conv_Gilroy-Regular';
+$primaria-bold: 'Conv_Gilroy-Bold';
+
+%h1-big {
+    font-size:calc(36px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(50px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+
+%h1 {
+    font-size:calc(24px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(30px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%h2 {
+    font-size:calc(30px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(40px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%h3 {
+    font-size:calc(24px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(36px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%h4 {
+    font-size:calc(20px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(30px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%h5{
+    font-size:calc(16px + 4 * ((100vw - 320px) / 992));
+    line-height:calc(24px + 4 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%h6{
+    font-size:calc(14px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(22px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+
+%min{
+    font-size:calc(12px + 10 * ((100vw - 320px) / 992));
+    line-height:calc(18px + 10 * ((100vw - 320px) / 992));
+    margin-bottom: 0;
+}
+

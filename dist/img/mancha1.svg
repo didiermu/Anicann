@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="473px" height="440px" viewBox="0 0 473 440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 4</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.809965588">
+        <g id="Mancha-Cafe" transform="translate(-2.000000, 0.000000)" fill="#287B40">
+            <g id="Group-3-Copy-2" transform="translate(238.500000, 220.000000) scale(-1, 1) translate(-238.500000, -220.000000) translate(2.000000, 0.000000)">
+                <path d="M237.5,33.2236567 C208.560658,-5.55268659 150.293631,-19.0050776 97.8812848,42.0310381 C45.468939,103.067154 0,192.515446 0,273.096333 C0,353.677221 89.9757183,481.657864 307.759238,426.697962 C525.542758,371.73806 474.238692,245.152633 445.603408,207.81332 C416.968124,170.474007 327.801339,195.831092 283.474981,164.10327 C239.148623,132.375447 266.439342,72 237.5,33.2236567 Z" id="Path-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
