@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Form / Input Copy 6</title>
+    <defs>
+        <path d="M15.0883986,4.29982125 C15.6954155,3.37484301 16.6814599,3.37770081 17.2866014,4.29982125 L24.2758986,14.9501788 C24.8829155,15.875157 24.4887356,16.625 23.3735738,16.625 L9.00142623,16.625 C7.89606904,16.625 7.4939599,15.8722992 8.09910144,14.9501788 L15.0883986,4.29982125 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3_Mobile_Testimonios" transform="translate(-35.000000, -648.000000)">
+            <g id="Group-12-Copy" transform="translate(0.000000, 638.000000)">
+                <g id="Group-7" transform="translate(36.000000, 11.000000)">
+                    <g id="Img">
+                        <g id="Group-12">
+                            <circle id="Oval" stroke="#287B40" stroke-width="0.5" cx="17.5" cy="17.5" r="17.5"></circle>
+                            <g id="Group-3" transform="translate(5.250000, 8.750000)">
+                                <circle id="Oval-8" fill="#04962E" cx="5.6875" cy="1.3125" r="1.3125"></circle>
+                                <path d="M3.85018529,9.62466311 C4.38165703,8.65835086 5.23957727,8.65150413 5.77481471,9.62466311 L8.66268529,14.8753369 C9.19415703,15.8416491 8.73675537,16.625 7.63069378,16.625 L1.99430622,16.625 C0.892881309,16.625 0.427077271,15.8484959 0.962314711,14.8753369 L3.85018529,9.62466311 Z" id="Triangle-1" fill="#04962E"></path>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Triangle-1-Copy" fill="#04962E" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

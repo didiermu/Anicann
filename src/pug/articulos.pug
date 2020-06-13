@@ -1,0 +1,104 @@
+- titulo = "Anicann - Artículos"
+
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+
+    body.articulos
+        include includes/header.pug
+         .mancha#mancha1
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+        
+         .mancha#mancha2
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        section.noticias--notas.articulos--notas
+            .mancha#mancha3
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+            .container
+                .row
+                    .col-7.col-lg-2.articulos--notas--title
+                        h4 Categorías
+
+
+                    .col-5.col-lg-2.articulos--notas--buttons
+                        button#boton-search
+                        button#boton-user
+                    
+                    //- .row#row-filtros
+                    .col-12.col-lg-4.multimedia--carrusel--filtros.articulos--notas--filtros
+                        .multimedia--carrusel--filtros__item
+                            h5 CATEGORIA
+                            img(src="../img/icon-filtro.svg")
+
+                        .multimedia--carrusel--filtros__item
+                            h5 CATEGORIA
+                            img(src="../img/icon-filtro.svg")
+
+                        .multimedia--carrusel--filtros__item
+                            h5 CATEGORIA
+                            img(src="../img/icon-filtro.svg")
+
+                        .multimedia--carrusel--filtros__item
+                            h5 CATEGORIA
+                            img(src="../img/icon-filtro.svg")
+
+                
+                    .col-12.col-lg-4.articulos--notas--title-cat
+                        h3 
+                            b Título categoría
+                
+                .row
+                    .col-12.articulos--item
+                        .noticias--notas--card.articulos--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/articulo.jpg", alt="")
+                            
+                            .noticias--notas--card--datos.articulos--notas--card--datos
+                               
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") Leer más
+
+                    .col-12.articulos--item
+                        .noticias--notas--card.articulos--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/articulo.jpg", alt="")
+                            
+                            .noticias--notas--card--datos.articulos--notas--card--datos
+                               
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") Leer más
+                    
+                    .col-12.articulos--mas
+                        h5  VER MÁS
+
+            .mancha#mancha4
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")   
+
+            .mancha#mancha5
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        include includes/footer.pug
+                                            
+
+
+

@@ -1,0 +1,68 @@
+- titulo = "Anicann - Multimedia"
+
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+
+    body.multimedia.reporte
+        include includes/header.pug
+
+        section.multimedia--hero
+
+            .container 
+                .row
+                    .col-12.col-lg-7
+                        svg(width='0' height='0')
+                            defs
+                                clipPath#myCurve(clipPathUnits='objectBoundingBox')
+                                    path(d='M 0,0 L 1,0 L 10, 10 C 1 1, 1.5 .35, 0 1 Z')
+                        
+                        .multimedia--hero--copy
+                            h1 REPORTE VERDE
+                            h5 Mantente informado con las últimas noticias acerca del uso de la cannabis
+
+        
+        section.multimedia--carrusel
+            .container
+                
+                .row.justify-content-center
+                    .col-12.multimedia--carrusel--videos
+                        .mancha#mancha1
+                            img.img-fluid.mancha2(src="../img/mancha1.svg", alt="")
+                        
+                        .mancha#mancha2
+                            img.img-fluid.mancha2(src="../img/mancha1.svg", alt="")
+
+                        .owl-carousel.owl-theme#carrusel-videos
+
+                            .multimedia--carrusel__video
+                                iframe(src='https://www.youtube.com/embed/Mh4f9AYRCZY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+                                
+                                h4
+                                    b Caso Aymeé Elizabeth
+
+                            .multimedia--carrusel__video
+                                iframe(src='https://www.youtube.com/embed/Mh4f9AYRCZY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+                                
+                                h4
+                                    b Caso Aymeé Elizabeth
+
+                            .multimedia--carrusel__video
+                                iframe(src='https://www.youtube.com/embed/Mh4f9AYRCZY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+                                
+                                h4
+                                    b Caso Aymeé Elizabeth
+                            
+                            .multimedia--carrusel__video
+                                iframe(src='https://www.youtube.com/embed/Mh4f9AYRCZY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+                                
+                                h4
+                                    b Caso Aymeé Elizabeth
+                                    
+
+                  
+        
+        include includes/footer.pug

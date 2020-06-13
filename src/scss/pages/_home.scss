@@ -304,7 +304,7 @@
     
     .modal-body{
         padding: 30px 30px 50px;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     h3{
@@ -334,5 +334,6 @@
         top: 60%;
         right: -80%;
         transform: scale(.5);
+        display: block;
     }
 }

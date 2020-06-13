@@ -1,0 +1,61 @@
+- titulo = "Anicann - Contacto"
+
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+
+    body.contacto
+        include includes/header.pug
+
+        .mancha#mancha1
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+    
+        .mancha#mancha2
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        section.contacto--section
+            .mancha#mancha3
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+            .container 
+                .row.justify-content-end
+                    .col-12.col-lg-7
+                        h1 
+                            b Contacto
+
+                .row.justify-content-center
+                    .col-12.col-lg-7.contacto--section--form
+                        form#form-contacto
+                            .cajaInput
+                                input.input#input-name(type="text", name="", placeholder="Nombre")
+                            
+                            .cajaInput
+                                input.input#input-apellido(type="text", name="", placeholder="Apellido")
+
+                            .cajaInput
+                                input.input#input-edad(type="text", name="", placeholder="Edad")
+                            
+                            .cajaInput
+                                input.input#input-email(type="text", name="", placeholder="Email")
+                            
+                            .cajaInput
+                                textarea.input#input-comentarios(placeholder="Comentarios")
+
+                            input.boton.boton-on#boton-enviar-contacto(type="button", value="Enviar")
+
+
+                    .col-12.col-lg-5.contacto--section--back
+                        img.img-fluid(src="../img/back-contacto.png", alt="")
+
+                .row
+                    .col-12.contacto--section--organigrama
+                        h2 ORGANIGRAMA
+                            
+
+        include includes/footer.pug

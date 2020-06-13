@@ -1,0 +1,107 @@
+.articulos{
+   
+    &--notas{
+        padding-top: 110px;
+
+
+        &--buttons{
+            border-left: 1px solid $primario;
+            justify-content: space-around;
+            display: flex;
+
+            button{
+                width: 26px;
+                height: 26px;
+                border: none;
+            }
+
+            #boton-search{
+                background: url("../../img/icon-search.svg") no-repeat center / contain;
+            }
+
+            #boton-user{
+                background: url("../../img/icon-user.svg") no-repeat center / contain;
+            }
+        }
+
+
+        #row-filtros{
+            position: sticky;
+            top: 60px;
+            z-index: 1;
+        }
+
+        &--filtros{
+            background: #fff;
+            margin: 20px auto 30px;
+            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+            justify-content: space-around;
+        }
+
+
+        &--title-cat{
+            h3{
+                padding-left: 30px;
+                margin-bottom: 40px;
+                @include tituloLine;
+
+                &:before{
+                    left: -15px;
+                }
+            }
+            
+        }
+
+        &--card{
+           overflow: hidden;
+            &--datos{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0%;
+                    width: 90%;
+                    height: 70%;
+                    background: #FFF;
+                    box-shadow: 0 0 9px 0 rgba(0,0,0,.16);
+                    right: 0;
+                    margin: auto;
+                    border-radius: 5px;
+                    z-index: -1
+                }
+            }
+
+        }
+
+    }
+
+    &--mas{
+        h5{
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            width: max-content;
+            margin: auto;
+
+            &:after{
+                content:"";
+                background:  url("../../img/icon-arrow-verde.svg") no-repeat center / contain;
+                width: 20px;
+                height: 20px;
+                display: block;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &--item{
+        margin-bottom: 50px;
+    }
+
+  
+        
+}

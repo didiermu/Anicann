@@ -1,0 +1,81 @@
+- titulo = "Anicann - Noticias"
+
+
+doctype
+html(lang='es')
+
+    include includes/head.pug
+
+
+    body.noticias
+        include includes/header.pug
+
+        .mancha#mancha1
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        .mancha#mancha2
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        section.noticias--hero
+            .container
+                .row
+                    .col-12.col-lg-5.noticias--hero--img
+                        img.img-fluid(src="../img/hero-noticias.jpg", alt="")
+                    
+                    .col-12.col-lg-7.noticias--hero--datos
+                        h1 
+                            b Anicann insiste en legalización de cannabis
+                        
+                        h5 Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                        .noticias--hero--datos--links
+                            h6 26 Febrero 2020
+                            a(href="#!" target="_blank") dineroenimagen.com
+                
+        section.noticias--notas
+            .mancha#mancha3
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+            .container
+                .row
+                    .col-12.col-lg-6
+                        .noticias--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/img-art.jpg", alt="")
+                            
+                            .noticias--notas--card--datos
+                                h6 26 Febrero 2020
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") dineroenimagen.com
+
+                    .col-12.col-lg-6
+                        .noticias--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/img-art.jpg", alt="")
+                            
+                            .noticias--notas--card--datos
+                                h6 26 Febrero 2020
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") dineroenimagen.com
+            .mancha#mancha4
+                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        include includes/footer.pug
+                                            
+
+
+

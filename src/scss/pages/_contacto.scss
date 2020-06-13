@@ -1,0 +1,53 @@
+&.contacto{
+    padding-top: 110px;
+}
+
+.contacto{
+
+    &--section{
+        padding-bottom: 50px;
+        position: relative;
+
+        h1{
+            @extend %h2;
+            margin-bottom: 15px;
+            @include tituloLine;
+            padding-left: 30px;
+    
+            &:before{
+                left: -15px;
+            }
+        }
+
+        &--form{
+            .cajaInput{
+                margin: 20px auto;
+            }
+        
+            .boton{
+                width: 50%;
+                max-width: 200px;
+                margin: 5px auto;
+            }
+        }
+
+        &--back{
+            position: absolute;
+            bottom: 0;
+            opacity: .2;
+            z-index: -1;
+            transform: rotateY(180deg);
+
+            img{
+                transform: scale(1.5);
+            }
+        }
+
+        &--organigrama{
+            background: #ccc;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+    }
+}

@@ -19,18 +19,56 @@
         object-position: center;
     }
     
-
-    h1{
-        color: #fff;
-        font-family: $primaria-bold;
+    &--copy{
         position: absolute;
         left: 15px;
+
+        h1{
+            color: #fff;
+            font-family: $primaria-bold;
+        }
+    
+        h5{
+            color: #fff;
+            margin: 10px auto;
+        }
     }
 
     
 }
 
 @mixin carrusel {
+
+    .owl-nav{
+        button{
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            bottom: 100px;
+            margin: auto;
+            outline: none;
+
+            &.owl-next{
+                right: 20%;
+            }
+
+            &.owl-prev{
+                transform: rotateY(180deg);
+                left: 20%;
+            }
+
+            span{
+                display: block;
+                color: transparent;
+                width: 100%;
+                height: 100%;
+                background: url("../../img/icon-arrow-verde.svg") no-repeat center / contain;
+            }
+            
+        }
+    }
+
     .owl-dots{
         display: flex;
         align-items: center;
@@ -84,29 +122,30 @@
 @mixin mancha {
     position: absolute;
 
-    #mancha1{
+    .mancha1{
         animation: mancha 5s ease-in-out infinite;
-        // animation-delay: 2.2s;
+        animation-delay: 1s;
     }
 
-    #mancha2{
+    .mancha2{
         position: absolute;
         left: 0;
         top: 0;
         transform: scale(.8);
-        animation: mancha2 5s ease-in-out infinite;
+        animation: mancha2 4s ease-in-out infinite;
+        animation-delay: 1.5s;
     }
 
     @keyframes mancha {
         0% {
-         transform: scale(1) translate(0px);
+         transform: scale(1) translate(0px) rotate(0deg);
         
         }
         50%{
-            transform: scale(.9) translate(-10px);
+            transform: scale(.9) translate(-30px) rotate(2deg);
         }
         100% {
-            transform: scale(1) translate(0px);
+            transform: scale(1) translate(0px) rotate(0deg);
         }
     }
 
@@ -116,10 +155,39 @@
         
         }
         50%{
-            transform: scale(.75) translate(30px);
+            transform: scale(.75) translate(10px);
         }
         100% {
             transform: scale(.8) translate(0px);
         }
+    }
+}
+
+// TEXTO
+
+@mixin tituloLine {
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: -40px;
+        top: 10px;
+        height: 2px;
+        width: 30px;
+        background: $primario;
+    }
+}
+
+
+@mixin linkFlecha {
+    color: $primario;
+    margin: 20px 0 0;
+
+    &:after{
+        content: "→";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
     }
 }

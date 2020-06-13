@@ -20,7 +20,8 @@ html(lang='es')
                                 clipPath#myCurve(clipPathUnits='objectBoundingBox')
                                     path(d='M 0,0 L 1,0 L 10, 10 C 1 1, 1.5 .35, 0 1 Z')
                         
-                        h1 Somos la primera Asociación Mexicana de la Industria del Cannabis
+                        .home--hero--copy
+                            h1 Somos la primera Asociación Mexicana de la Industria del Cannabis
 
         section.home--noticias
             .container
@@ -64,6 +65,14 @@ html(lang='es')
                                             b Titulo nota
                                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
 
+        .mancha#mancha1
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        .mancha#mancha2
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
         section.home--about
             .container
                 .row.justify-content-center
@@ -75,6 +84,14 @@ html(lang='es')
             .container
                 .row
                     .col-12
+                        .mancha#mancha3
+                            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+                        
+                        .mancha#mancha4
+                            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
                         img.img-fluid(src="../img/banner-2.png", alt="")
 
                         .home--beneficios--copy
@@ -83,6 +100,11 @@ html(lang='es')
 
                             a(href="#!")
                                 button.boton.boton-on Ver mas
+
+            
+        .mancha#mancha5
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
         section.home--cita
             .container
@@ -106,6 +128,10 @@ html(lang='es')
                             span 
                                 b aplicación
 
+                .mancha#mancha6
+                    img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                    img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
                 .row.home--aplicacion--cards
                     .col-12.col-lg-7
                         img.img-fluid(src="../img/app-1.png", alt="Anicann aplicacion")
@@ -115,6 +141,10 @@ html(lang='es')
                             b Médico
 
                         h4 El uso y beneficios del cannabis en la industria farmacéutica y la salud
+
+                .mancha#mancha7
+                    img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                    img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
                 .row.home--aplicacion--cards#app-industrial
                     .col-12.col-lg-7
@@ -135,8 +165,14 @@ html(lang='es')
                             b Agricola
                             
                         h4 El uso y beneficios del cannabis en la industria farmacéutica y la salud
-               
+
+                .mancha#mancha8
+                    img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                    img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+
         section.home--info
+            .container
                 .row.justify-content-center
                     .col-12.col-lg-6
                         h3
@@ -187,9 +223,9 @@ html(lang='es')
 
                                     input.boton.boton-on#boton-enviar-news(type="button", value="Enviar")
                                 
-                                .mancha
-                                    img.img-fluid#mancha1(src="../img/mancha1.svg", alt="")
-                                    img.img-fluid#mancha2(src="../img/mancha2.svg", alt="")
+                        .mancha
+                            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
                     
         include includes/footer.pug
 
