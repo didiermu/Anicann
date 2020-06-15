@@ -124,6 +124,14 @@
 
     img{
         transform: scale(1.1);
+
+        &.objetFade{
+            transform: scale(.8);
+        }
+    
+        &.transition1{
+            transform: scale(1);
+        }
     }
 
     &--copy{
@@ -177,7 +185,17 @@
             align-self: flex-end;
             margin: 20px 0 0;
         }
+
+        &.objetFade{
+            transform: translateX(-20px);
+        }
+    
+        &.transition1{
+            transform: translateX(0);
+        }
     }
+
+    
 }
 
 
@@ -256,18 +274,36 @@
 
         img{
             margin: 20px auto;
+
+            &.objetFade{
+                transform: scale(.8);
+            }
+        
+            &.transition1{
+                transform: scale(1);
+            }
         }
 
         h1{
             color: $secundario;
             text-transform: uppercase;
         }
+
+        [class*="col-"]{
+            &.objetFade{
+                transform: translateX(-20px);
+            }
+        
+            &.transition1{
+                transform: translateX(0);
+            }
+        }
     }
 }
 
 
 .home--info{
-    background: url("../../img/back-info.jpg") no-repeat center / cover fixed;
+    background: url("../../img/back-info.jpg") no-repeat center /  cover fixed;
     padding: 30px 0;
     color: #fff;
     text-align: center;

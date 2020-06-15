@@ -141,10 +141,15 @@ body {
 
 
         .home--noticias{
-            margin: -100px 0 40px;
+            margin: -150px 0 40px;
+
+            &--title{
+                h5, a{
+                    @include h5;
+                }
+            }
 
             &--notas{
-                margin-top: 20px;
                 
                 &__nota{
                     height: 315px;
@@ -227,7 +232,7 @@ body {
             }
 
             img{
-                right: 120px;
+                right: calc(120px + 500 * ((100vw - 1280px) / 1920));
                 max-width: 450px;
                 width: 30%;
             }
@@ -253,7 +258,7 @@ body {
 
                 h4{
                     @include h2;
-                    margin:20px 0 100px;
+                    margin:20px 0 200px;
                 }
             }
         }

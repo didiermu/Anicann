@@ -210,8 +210,8 @@ body .header {
   z-index: 9;
   width: 100%;
   background: rgba(21,86,40,.9);
-  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
-  clip-path: ellipse(100% 55% at 48% 44%);
+  -webkit-clip-path: url("#maskHeader");
+  clip-path: url("#maskHeader");
 }
 
 body .home--hero,
@@ -516,6 +516,17 @@ body .mancha .mancha2 {
   }
 }
 
+body .objetFade {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: .4s ease-in-out all;
+}
+
+body .transition1 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 body .home--hero {
   background: url("../img/hero.jpg") center/cover no-repeat fixed;
 }
@@ -674,6 +685,14 @@ body .home--beneficios img {
   transform: scale(1.1);
 }
 
+body .home--beneficios img.objetFade {
+  transform: scale(.8);
+}
+
+body .home--beneficios img.transition1 {
+  transform: scale(1);
+}
+
 body .home--beneficios--copy {
   position: absolute;
   left: 0;
@@ -726,6 +745,14 @@ body .home--beneficios--copy .boton {
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin: 20px 0 0;
+}
+
+body .home--beneficios--copy.objetFade {
+  transform: translateX(-20px);
+}
+
+body .home--beneficios--copy.transition1 {
+  transform: translateX(0);
 }
 
 body .home--cita {
@@ -810,9 +837,25 @@ body .home--aplicacion--cards img {
   margin: 20px auto;
 }
 
+body .home--aplicacion--cards img.objetFade {
+  transform: scale(.8);
+}
+
+body .home--aplicacion--cards img.transition1 {
+  transform: scale(1);
+}
+
 body .home--aplicacion--cards h1 {
   color: #155628;
   text-transform: uppercase;
+}
+
+body .home--aplicacion--cards [class*=col-].objetFade {
+  transform: translateX(-20px);
+}
+
+body .home--aplicacion--cards [class*=col-].transition1 {
+  transform: translateX(0);
 }
 
 body .home--info {
@@ -1381,11 +1424,13 @@ body .contacto--section--organigrama {
   }
 
   body .home--noticias {
-    margin: -100px 0 40px;
+    margin: -150px 0 40px;
   }
 
-  body .home--noticias--notas {
-    margin-top: 20px;
+  body .home--noticias--title a,
+  body .home--noticias--title h5 {
+    font-size: calc(18px + 10 * ((100vw - 1280px)/ 1920));
+    line-height: calc(26px + 10 * ((100vw - 1280px)/ 1920));
   }
 
   body .home--noticias--notas__nota {
@@ -1467,7 +1512,7 @@ body .contacto--section--organigrama {
   }
 
   body .home--cita img {
-    right: 120px;
+    right: calc(120px + 500 * ((100vw - 1280px)/ 1920));
     max-width: 450px;
     width: 30%;
   }
@@ -1494,7 +1539,7 @@ body .contacto--section--organigrama {
   body .home--aplicacion--cards h4 {
     font-size: calc(26px + 10 * ((100vw - 1280px)/ 1920));
     line-height: calc(38px + 10 * ((100vw - 1280px)/ 1920));
-    margin: 20px 0 100px;
+    margin: 20px 0 200px;
   }
 
   body .home--info {

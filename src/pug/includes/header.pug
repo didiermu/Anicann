@@ -1,7 +1,13 @@
 header.header
     .container
         .row
-           
+            svg(width='0' height='0')
+                defs
+                    clipPath#maskHeader(clipPathUnits='objectBoundingBox')
+                        path(d="M 0,1 L 0,0 L 1,0 L 1.1,.7 C -.25 2, -1.4 -2, 0 1 Z")
+                        
+                        
+
             .col-6.col-lg-2.header--logo
                 a(href="./")
                     img.img-fluid#header--logo(src="../img/logo-anicann.png" ,  alt="Anicann")

@@ -10,7 +10,7 @@ html(lang='es')
     body.home
         include includes/header.pug
 
-        section.home--hero
+        section.home--hero.sectionFade
 
             .container 
                 .row
@@ -18,17 +18,14 @@ html(lang='es')
                         svg(width='0' height='0')
                             defs
                                 clipPath#myCurve(clipPathUnits='objectBoundingBox')
-                                    //- path(d="M 0,1 L 0,0 L 1,0 L 1,1 C .2 .6, .35 1, 0 1 Z")
-                                    path(d="M 0,1 L 0,0 L 1,0 L 3,3 C .1 0, 1.2 1.1, 0 1, 0 0 Z")
-                                    
-                                    
+                                    path(d="M 0,1 L 0,0 L 1,0 L 1,0 C 1.3 1.8, .4 .5, 0 1 Z")
                                                             
                         .home--hero--copy
-                            h1 Somos la primera Asociación Mexicana de la Industria del Cannabis
+                            h1.objetFade Somos la primera Asociación Mexicana de la Industria del Cannabis
 
-        section.home--noticias
+        section.home--noticias.sectionFade
             .container
-                .row.justify-content-lg-center
+                .row.justify-content-lg-center.objetFade
                     .col-12.col-lg-10.home--noticias--title
                         h5 Últimas noticias
                         a(href="#!") Más noticias
@@ -83,7 +80,7 @@ html(lang='es')
                         h5 
                             b Nuestro objetivo es impulsar la "economía verde" de México. ANICANN es conformada por un grupo de emprendedores y empresarios comprometidos con el desarrollo de la industria del cannabis mexicana
 
-        section.home--beneficios
+        section.home--beneficios.sectionFade
             .container
                 .row
                     .col-12
@@ -95,9 +92,9 @@ html(lang='es')
                             img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
                             img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
-                        img.img-fluid(src="../img/banner-2.png", alt="")
+                        img.img-fluid(src="../img/banner-2.png", alt="").objetFade
 
-                        .home--beneficios--copy
+                        .home--beneficios--copy.objetFade
                             h2 Cono
                                 b ce los 
                                 |bene
@@ -140,11 +137,11 @@ html(lang='es')
                     img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
                     img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
-                .row.home--aplicacion--cards
+                .row.home--aplicacion--cards.sectionFade
                     .col-12.col-lg-7
-                        img.img-fluid(src="../img/app-1.png", alt="Anicann aplicacion")
+                        img.img-fluid(src="../img/app-1.png", alt="Anicann aplicacion").objetFade
                     
-                    .col-12.col-lg-5
+                    .col-12.col-lg-5.objetFade
                         h1.h1-big 
                             b Médico
 
@@ -154,21 +151,21 @@ html(lang='es')
                     img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
                     img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
-                .row.home--aplicacion--cards#app-industrial
+                .row.home--aplicacion--cards#app-industrial.sectionFade
                     .col-12.col-lg-7
-                        img.img-fluid(src="../img/app-2.png", alt="Anicann aplicacion")
+                        img.img-fluid(src="../img/app-2.png", alt="Anicann aplicacion").objetFade
                     
-                    .col-12.col-lg-5
-                        h1.h1-big 
+                    .col-12.col-lg-5.objetFade
+                        h1.h1-big
                             b Industrial
                             
                         h4 El úso del cáñamo para la producción en la industria del país
 
-                .row.home--aplicacion--cards
+                .row.home--aplicacion--cards.sectionFade
                     .col-12.col-lg-7
-                        img.img-fluid(src="../img/app-3.png", alt="Anicann aplicacion")
+                        img.img-fluid(src="../img/app-3.png", alt="Anicann aplicacion").objetFade
                     
-                    .col-12.col-lg-5
+                    .col-12.col-lg-5.objetFade
                         h1.h1-big 
                             b Agricola
                             

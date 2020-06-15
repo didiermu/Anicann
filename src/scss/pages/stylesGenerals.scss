@@ -93,14 +93,14 @@ a{
 }
 
 
-// .objetFade{
-//     margin-top: -50px;
-//     opacity: 0;
-//     transition: .3s ease-in-out all;
-// }
+.objetFade{
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .4s ease-in-out all;
+}
 
-// .transition1{
-//     margin-top: 0px;
-//     opacity: 1;
-// }
+.transition1{
+    transform: translateY(0px);
+    opacity: 1;
+}
 
