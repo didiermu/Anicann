@@ -72,24 +72,70 @@
                 text-align: right;
                 list-style: none;
                 margin-bottom: 15px;
-                transition: .1s ease-in-out all;
+                transition: .3s ease-in-out all;
                 font-size: 20px;
                 width: max-content;
                 color: #fff;
                 text-transform: uppercase;
                 font-size:calc(16px + 2 * ((100vw - 320px) / 992));
+                position: relative;
 
                 a{
                     color: inherit;
+                }
+
+                &.menuActivo{
+                    
+                    
+                    a{
+                        font-family: $primaria-bold;
+                    }
+                    
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        height: 1px;
+                        width: 50%;
+                        background: #fff;
+                    }
                     
                 }
 
+                &:before{
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    height: 1px;
+                    width: 0%;
+                    background: #fff;
+                    transition: .3s ease-in-out all;
+                }
+
+                &:hover{
+                    &:before{
+                        width: 50%;
+                    }
+                }
+
             }
+
+          
         }
 
         &--redes{
             img{
                 margin: 10px;
+                transition: .3s ease-in-out all;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &:before{
+                display: none;
             }
         }
     }

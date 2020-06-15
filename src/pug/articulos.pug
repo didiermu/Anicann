@@ -1,5 +1,5 @@
 - titulo = "Anicann - Artículos"
-
+- articulos = "menuActivo"
 
 doctype
 html(lang='es')
@@ -9,13 +9,13 @@ html(lang='es')
 
     body.articulos
         include includes/header.pug
-         .mancha#mancha1
-                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
-                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
-        
-         .mancha#mancha2
-                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
-                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+        .mancha#mancha1
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+
+        .mancha#mancha2
+            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
         section.noticias--notas.articulos--notas
             .mancha#mancha3
@@ -23,7 +23,7 @@ html(lang='es')
                 img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
 
             .container
-                .row
+                .row#rowHeader
                     .col-7.col-lg-2.articulos--notas--title
                         h4 Categorías
 
@@ -85,6 +85,36 @@ html(lang='es')
 
                                 
                                 a(href="#!" target="_blank") Leer más
+
+                    .col-12.articulos--item
+                        .noticias--notas--card.articulos--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/articulo.jpg", alt="")
+                            
+                            .noticias--notas--card--datos.articulos--notas--card--datos
+                               
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") Leer más
+
+                    .col-12.articulos--item
+                        .noticias--notas--card.articulos--notas--card
+                            .noticias--notas--card--img
+                                img.img-fluid(src="../img/articulo.jpg", alt="")
+                            
+                            .noticias--notas--card--datos.articulos--notas--card--datos
+                               
+                                h4 
+                                    b Anicann insiste en legalización de cannabis
+                                
+                                h6.noticias--notas--card--datos--desc Guillermo Nieto, presidente de la Asociación Nacional de la industria del Cannabis participó en el Senado en la mesa: "La realidad del campo mexicano y alternativa para el desarrollo de una nueva industria".
+
+                                
+                                a(href="#!" target="_blank") Leer más
                     
                     .col-12.articulos--mas
                         h5  VER MÁS
@@ -93,9 +123,7 @@ html(lang='es')
                 img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
                 img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")   
 
-            .mancha#mancha5
-                img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
-                img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
+           
 
         include includes/footer.pug
                                             

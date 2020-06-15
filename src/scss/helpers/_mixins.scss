@@ -105,6 +105,10 @@
         background: $primario;
         color: #fff;
     }
+
+    @media (min-width:992px) {
+        font-size:calc(14px + 10 * ((100vw - 1280px) / 1920));
+    }
 }
 
 @mixin input{
@@ -117,6 +121,11 @@
     min-height: 40px;
 
     @extend %h5;
+
+    @media (min-width:992px) {
+        font-size:calc(16px + 10 * ((100vw - 1280px) / 1920));
+        padding: 5px 10px;
+    }
 }
 
 @mixin mancha {
@@ -125,6 +134,8 @@
     .mancha1{
         animation: mancha 5s ease-in-out infinite;
         animation-delay: 1s;
+        position: relative;
+        z-index: 1;
     }
 
     .mancha2{
@@ -163,6 +174,14 @@
     }
 }
 
+@mixin mancha2 {
+
+    .mancha1, .mancha2{
+        animation-duration: 10s;
+    }
+
+}
+
 // TEXTO
 
 @mixin tituloLine {
@@ -189,5 +208,12 @@
         display: inline-block;
         vertical-align: middle;
         margin-left: 10px;
+        transition: .2s ease-in-out all;
+    }
+
+    &:hover{
+        &:after{
+            margin-left: 15px;
+        }
     }
 }

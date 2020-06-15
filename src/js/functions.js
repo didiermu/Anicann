@@ -1,11 +1,7 @@
-"use strict";
-
 $(document).ready(function () {
     $("html").css("opacity", "1");
 
     $('#modal-newsletter').modal('show')
-
-    
 
 
     // HEADER
@@ -31,13 +27,10 @@ $(document).ready(function () {
         
             992: {
                 items: 3,
-                dots: false,
-                mouseDrag: false
+                dots: false
                 
             }
         }
     });
-
-    
 
 });

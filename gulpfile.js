@@ -147,11 +147,11 @@ gulp.task('pastefiles', function() {
 /* ======================================================================================================
  * Tarea por default
  * ======================================================================================================*/
-gulp.task('watch', function () {
-    gulp.watch('./src/pug/**/*.pug', ['pug']);
+gulp.task('watch', function() {
     gulp.watch('./src/scss/**/**.scss', ['sass']);
     gulp.watch('./src/css/**/**.css', ['minifyCSS']);
     gulp.watch('./src/js/*.js', ['scripts']);
+    gulp.watch('./src/pug/**/*.pug', ['pug']);
     gulp.watch('./src/fonts/*', ['pastefiles']);
     gulp.watch('./src/img/**/**.*', ['img']);
 
