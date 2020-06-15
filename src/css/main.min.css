@@ -481,7 +481,7 @@ body .mancha {
 }
 
 body .mancha .mancha1 {
-  animation: mancha 5s ease-in-out infinite;
+  animation: mancha 6s ease-in-out infinite;
   animation-delay: 1s;
   position: relative;
   z-index: 1;
@@ -492,7 +492,7 @@ body .mancha .mancha2 {
   left: 0;
   top: 0;
   transform: scale(.8);
-  animation: mancha2 4s ease-in-out infinite;
+  animation: mancha2 5s ease-in-out infinite;
   animation-delay: 1.5s;
 }
 
@@ -1550,10 +1550,6 @@ body .contacto--section--organigrama {
     right: 0;
     transform: rotateY(180deg) rotateZ(90deg) translate(70px,80px);
     bottom: 0;
-  }
-
-  body #modal-newsletter .mancha .mancha2 {
-    transform: rotateZ(20deg);
   }
 
   body #modal-newsletter h5 {
