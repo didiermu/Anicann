@@ -18,19 +18,22 @@ html(lang='es')
                         svg(width='0' height='0')
                             defs
                                 clipPath#myCurve(clipPathUnits='objectBoundingBox')
-                                    path(d='M 0,0 L 1,0 L 10, 10 C 1 1, 1.5 .35, 0 1 Z')
-                        
+                                    //- path(d="M 0,1 L 0,0 L 1,0 L 1,1 C .2 .6, .35 1, 0 1 Z")
+                                    path(d="M 0,1 L 0,0 L 1,0 L 3,3 C .1 0, 1.2 1.1, 0 1, 0 0 Z")
+                                    
+                                    
+                                                            
                         .home--hero--copy
                             h1 Somos la primera Asociación Mexicana de la Industria del Cannabis
 
         section.home--noticias
             .container
-                .row
-                    .col-12.home--noticias--title
+                .row.justify-content-lg-center
+                    .col-12.col-lg-10.home--noticias--title
                         h5 Últimas noticias
                         a(href="#!") Más noticias
 
-                    .col-12.home--noticias--notas
+                    .col-12.col-lg-10.home--noticias--notas
                         .owl-carousel.owl-theme#carrusel-noticias
                             a(href="#!")
                                 .item.home--noticias--notas__nota
@@ -95,8 +98,13 @@ html(lang='es')
                         img.img-fluid(src="../img/banner-2.png", alt="")
 
                         .home--beneficios--copy
-                            h2 Conoce los beneficios de la 
-                                span Cannabis
+                            h2 Cono
+                                b ce los 
+                                |bene
+                                b ficios de la 
+                                
+                                span Can
+                                    b nabis
 
                             a(href="#!")
                                 button.boton.boton-on Ver mas
@@ -109,7 +117,7 @@ html(lang='es')
         section.home--cita
             .container
                 .row
-                    .col-12.col-lg-5
+                    .col-12.col-lg-8
                         h4 Al cannabis hay que verlo  y analizarlo primero como un producto agrícola; si no se ve así no visualizas las grandes ventajas que tiene el país para producir"
                     
                     .col-12.home--cita--autor
@@ -117,7 +125,7 @@ html(lang='es')
                             h5 Guillermo Nieto
                             h6 Presidente de la Asociación Nacional de la Industria del Cannabis
 
-                        img.img-fluid(src="../img/señor.png", alt="Anicann Presidente")
+                    img.img-fluid(src="../img/señor.png", alt="Anicann Presidente")
 
         section.home--aplicacion
             .container

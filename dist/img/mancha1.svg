@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="473px" height="440px" viewBox="0 0 473 440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Path 4</title>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.809965588">
-        <g id="Mancha-Cafe" transform="translate(-2.000000, 0.000000)" fill="#287B40">
-            <g id="Group-3-Copy-2" transform="translate(238.500000, 220.000000) scale(-1, 1) translate(-238.500000, -220.000000) translate(2.000000, 0.000000)">
-                <path d="M237.5,33.2236567 C208.560658,-5.55268659 150.293631,-19.0050776 97.8812848,42.0310381 C45.468939,103.067154 0,192.515446 0,273.096333 C0,353.677221 89.9757183,481.657864 307.759238,426.697962 C525.542758,371.73806 474.238692,245.152633 445.603408,207.81332 C416.968124,170.474007 327.801339,195.831092 283.474981,164.10327 C239.148623,132.375447 266.439342,72 237.5,33.2236567 Z" id="Path-4"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 473 440" style="enable-background:new 0 0 473 440;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#4E9562;}
+</style>
+<g id="Symbols">
+	<g id="Mancha-Cafe" transform="translate(-2.000000, 0.000000)">
+		
+			<g id="Group-3-Copy-2" transform="translate(238.500000, 220.000000) scale(-1, 1) translate(-238.500000, -220.000000) translate(2.000000, 0.000000)">
+			<path id="Path-4" class="st0" d="M237.5,33.2C208.6-5.6,150.3-19,97.9,42S0,192.5,0,273.1s90,208.6,307.8,153.6
+				s166.5-181.5,137.8-218.9s-117.8-12-162.1-43.7S266.4,72,237.5,33.2z"/>
+		</g>
+	</g>
+</g>
 </svg>
