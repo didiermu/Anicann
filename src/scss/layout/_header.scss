@@ -6,12 +6,11 @@
     z-index: 9;
     width: 100%;
     background: rgba(21, 86, 40, 0.9);
-    // clip-path: ellipse(100% 55% at 48% 44%);
     clip-path: url(#maskHeader);
 
-    // &.headerOn{
-    //     background: rgba(21, 86, 40, .8) !important;
-    // }
+    &.headerOn{
+        background: rgba(21, 86, 40, .98) !important;
+    }
 
     .container{
         height: 100%;
@@ -72,7 +71,7 @@
             li{
                 text-align: right;
                 list-style: none;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
                 transition: .3s ease-in-out all;
                 font-size: 20px;
                 width: max-content;

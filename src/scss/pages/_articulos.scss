@@ -106,3 +106,37 @@
   
         
 }
+
+&.articulos{
+    #mancha1{
+        width: 440px;
+        left: 0;
+        transform: rotateY(0) translate(-290px,50px) scale(.5);
+        position: fixed;
+        z-index: -2;
+    }
+
+    #mancha2{
+        width: 450px;
+        right: 0;
+        transform: rotateY(180deg) rotateZ(200deg) translate(280px,120px) scale(.5);
+        z-index: -1;
+    }
+
+    #mancha3{
+        width: 450px;
+        right: 0;
+        top: 50%;
+        transform: rotateY(0deg) rotateZ(100deg) translate(0,-280px) scale(.5);
+        z-index: -1;
+        position: fixed;
+    }
+
+    #mancha4{
+        width: 450px;
+        left: 0;
+        transform: rotateY(180deg) rotateZ(10deg) translate(250px,50px) scale(0);
+        bottom: 0;
+        z-index: -2;
+    }
+}

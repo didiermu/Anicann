@@ -37,7 +37,8 @@
             -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
             -moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
             box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.29);
-            width: 85%;
+            width: 100%;
+            max-width: 260px;
             margin: 20px 0 30px;
 
             &__copy{
@@ -373,3 +374,55 @@
     }
 }
 
+
+&.home{
+    #mancha1{
+        width: 250px;
+        left: 0;
+        transform: rotateY(180deg) rotateZ(20deg) translate(110px,-120px) scale(.4);
+    }
+
+    #mancha2{
+        width: 200px;
+        right: 0;
+        transform: rotateY(180deg) translate(-100px, 90px) scale(.4);
+    }
+
+    #mancha3{
+        width: 180px;
+        left: 0;
+        transform: rotateY(0) rotateZ(20deg) translate(80px,200px) scale(0);
+        @include mancha2;
+    }
+
+    #mancha4{
+        width: 250px;
+        left: 0;
+        transform: rotateY(0) translate(460px,-110px) scale(0);
+        @include mancha2;
+    }
+
+    #mancha5{
+        width: 270px;
+        right: 0;
+        transform: rotateY(0deg) translate(150px,-170px) scale(.4);
+    }
+
+    #mancha6{
+        width: 430px;
+        right: 0;
+        transform: rotateY(180deg) translate(-270px,100px) scale(.4);
+    }
+
+    #mancha7{
+        width: 340px;
+        left: 0;
+        transform: rotateZ(10deg) rotateY(180deg) translate(170px,150px) scale(.4);
+    }
+
+    #mancha8{
+        width: 360px;
+        right: 0;
+        transform: rotateZ(10deg) rotateY(0deg) translate(170px,-230px) scale(.4);
+    }
+}

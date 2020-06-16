@@ -7,12 +7,15 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                margin: 0
+                margin: 20,
+                autoWidth: true,
+                center: true
             },
         
             992: {
                 items: 3,
                 nav: true,
+                margin: 0,
                 autoWidth: true, 
                 center: true,
                 mouseDrag:false

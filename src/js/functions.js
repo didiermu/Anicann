@@ -18,10 +18,12 @@ $(document).ready(function () {
 
                  $(".row.objetFade").addClass("transition1");
                  $(".noticias--notas .objetFade").addClass("transition1");
+                 $(".multimedia--carrusel .objetFade").addClass("transition1");
                  
                  $(document).scroll(function () {
                      $(".home--noticias--notas__nota").addClass("transition1");
                      $(".noticias--notas .objetFade").addClass("transition1");
+                     $(".multimedia--carrusel .objetFade").addClass("transition1");
                  });
             }
          }, 500);
@@ -72,7 +74,9 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 dots: true,
-                margin: 0
+                margin: 20,
+                autoWidth: true,
+                center: true
             },
         
             992: {
