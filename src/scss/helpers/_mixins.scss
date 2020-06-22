@@ -1,6 +1,6 @@
 @mixin hero {
     
-    background: url("../../img/hero.jpg") no-repeat center / cover fixed;
+    // background: url("../../img/hero.jpg") no-repeat center / cover fixed;
     clip-path: url(#myCurve);
 
     [class*="col-"]{
@@ -32,6 +32,12 @@
         h5{
             color: #fff;
             margin: 10px auto;
+        }
+    }
+
+    @media (min-width:992px) {
+        &--copy{
+            margin-top: 0;
         }
     }
 
@@ -101,11 +107,20 @@
     padding: 5px 10px;
     height: 36px;
     min-width: 100px;
+    transition: .3s ease-in-out all;
 
     &.boton-on{
         background: $primario;
         color: #fff;
+
+        &:hover{
+            background: #fff;
+            color: $primario;
+            border: 1px solid $primario;
+        }
     }
+
+    
 
     @media (min-width:992px) {
         font-size:calc(14px + 10 * ((100vw - 1280px) / 1920));
@@ -116,7 +131,8 @@
     appearance: none;
     outline: none;
     border: none;
-    // border-left: 1px solid $primario;
+    box-shadow: none;
+    background: none;
     border-bottom: 1px solid $primario;
     border-radius: 2px;
     width: 100%;
@@ -127,6 +143,10 @@
 
     &:focus{
         border-bottom: 1px solid rgb(255, 217, 0);
+    }
+
+    &::placeholder{
+        color:$textoNegro;
     }
 
     @media (min-width:992px) {
@@ -190,6 +210,49 @@
 
 }
 
+@mixin manchaline {
+    position: absolute;
+    // transform: scale(.9) rotate(-155deg) translate(60px, -20px);
+    // animation: giro 30s ease-in-out infinite;
+
+    path{
+        fill: none;
+        stroke: $primario;
+        stroke-width: 2;
+        // animation: manchaline 20s ease-in-out infinite;
+        // animation-delay: 1s;
+    }
+
+    @keyframes giro{
+        0%{
+            transform: scale(.9) rotate(0deg) translate(60px, -20px);
+        }
+
+        100%{
+            transform: scale(.9) rotate(360deg) translate(60px, -20px);
+        }
+    }
+
+    @keyframes manchaline {
+        0% {
+            d: path("M237.5,41.9c-27.6-37-83.1-49.8-133.1,8.4S11,193.8,11,270.6s85.8,198.9,293.5,146.5 s160.7-174.6,131.4-208.7c-43.1-50.2-112.3-11.4-154.6-41.7S265,78.9,237.5,41.9z");
+            
+        }
+        30%{
+            d: path("M184.4,88.8c-27.6-37-93.3-65.2-143.3-7s18.2,167.1,18.2,244s49.6,133.5,257.2,81.1 s94.3-218.3,65-252.3c-43.1-50.2-122.7,61-165,30.8S211.9,125.8,184.4,88.8z");
+            
+        }
+        60% {
+            d: path("M182.3,37.8c-27.6-37-101.7-26-151.7,32.2s44,156.6,44,233.5s41.2,139.1,248.9,86.7 s116.7-288.9,87.4-323c-43.1-50.2-108.8,92.4-151,62.2S209.8,74.8,182.3,37.8z");
+            
+        }
+        100% {
+            d: path("M237.5,41.9c-27.6-37-83.1-49.8-133.1,8.4S11,193.8,11,270.6s85.8,198.9,293.5,146.5 s160.7-174.6,131.4-208.7c-43.1-50.2-112.3-11.4-154.6-41.7S265,78.9,237.5,41.9z");
+            
+        }
+    }
+    
+}
 // TEXTO
 
 @mixin tituloLine {

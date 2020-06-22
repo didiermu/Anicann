@@ -10,6 +10,13 @@
 
     &.headerOn{
         background: rgba(21, 86, 40, .98) !important;
+
+        .header--navegacion{
+            .btn{
+                background: url("../img/icon-close.svg") no-repeat center / 30px;
+                
+            }
+        }
     }
 
     .container{
@@ -47,10 +54,6 @@
             height: 40px;
             background: url("../../img/icon-burguer.svg") no-repeat center / 30px;
             transition: .2s ease-in-out all;
-
-            &.nav-on{
-                background: url("../img/icons/icon-close.svg") no-repeat center / 30px;
-            }
         }
     }
 

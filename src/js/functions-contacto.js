@@ -129,8 +129,9 @@ $(document).ready(function () {
         // VALIDATE ALL
 
         if( $('#form-newsletter .error-input').length == 0){
-            $('#modal-newsletter').modal('hide')
-            $(this).attr("type", "submit");
+            $('#modal-newsletter').modal('hide');
+            $('#modal-thankyou').modal('show');
+            // $(this).attr("type", "submit");
         }
         
     });
@@ -158,7 +159,8 @@ $(document).ready(function () {
         // VALIDATE ALL
 
         if( $('#form-contacto .error-input').length == 0){
-            $(this).attr("type", "submit");
+            $('#modal-thankyou').modal('show');
+            // $(this).attr("type", "submit");
         }
         
     });

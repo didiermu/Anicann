@@ -29,19 +29,19 @@
           <div class="col-12 col-lg-10 d-lg-flex">
             <div class="collapse navbar-collapse d-lg-block" id="navbarNav">
               <ul>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li class="menuActivo"> <a href="multimedia.html">Multimedia</a></li>
-                <li> <a href="reporte-verde.html">Reporte Verde</a></li>
-                <li> <a href="articulos.html">Artículos</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li id="navbarNav--redes"><a href="#!"><img src="../../img/icon-facebook.svg" alt=""></a><a href="#!"><img src="../../img/icon-twitter.svg" alt=""></a><a href="#!"><img src="../../img/icon-instagram.svg" alt=""></a></li>
+                <li id="menuNoticias"><a href="noticias.html">Noticias</a></li>
+                <li class="menuActivo" id="menuMultimedia"> <a href="multimedia.html">Multimedia</a></li>
+                <li id="menuReporte"> <a href="reporte-verde.html">Reporte Verde</a></li>
+                <li id="menuArticulos"> <a href="articulos.html">Artículos</a></li>
+                <li id="menuContacto"> <a href="contacto.html">Contacto</a></li>
+                <li id="navbarNav--redes"><a href="https://www.facebook.com/ANICANNMX/" target="_blank"><img src="../../img/icon-facebook.svg" alt=""></a><a href="https://www.instagram.com/anicannmx/" target="_blank"><img src="../../img/icon-twitter.svg" alt=""></a><a href="https://twitter.com/anicannmx" target="_blank"><img src="../../img/icon-instagram.svg" alt=""></a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="multimedia--hero sectionFade">
+    <section class="multimedia--hero sectionFade" style="background: url('img/hero.jpg') no-repeat center / cover fixed;">
       <div class="container"> 
         <div class="row">
           <div class="col-12 col-lg-7">
@@ -53,8 +53,8 @@
               </defs>
             </svg>
             <div class="multimedia--hero--copy objetFade">
-              <h1>CÁNCER Y CANNABIS</h1>
-              <h5>Conoce los testimonios de cómo la canabis ha ayudado a muchos pacientes a tratar su padecimiento</h5>
+              <h1>ANICANN MULTIMEDIA</h1>
+              <h5>Entrevistas, testimonios y videos informativos acerca de la industria del cannabis.</h5>
             </div>
           </div>
         </div>
@@ -67,36 +67,40 @@
             <div class="mancha" id="mancha1"><img class="img-fluid mancha2" src="../img/mancha1.svg" alt=""></div>
             <div class="mancha" id="mancha2"><img class="img-fluid mancha2" src="../img/mancha1.svg" alt=""></div>
             <div class="owl-carousel owl-theme" id="carrusel-videos">
-              <div class="multimedia--carrusel__video">
+              <div class="multimedia--carrusel__video videos-guillermo">
                 <iframe src="https://www.youtube.com/embed/Mh4f9AYRCZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h4><b>Caso Aymeé Elizabeth</b></h4>
               </div>
-              <div class="multimedia--carrusel__video">
+              <div class="multimedia--carrusel__video videos-guillermo">
                 <iframe src="https://www.youtube.com/embed/Mh4f9AYRCZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h4><b>Caso Aymeé Elizabeth</b></h4>
               </div>
-              <div class="multimedia--carrusel__video">
+              <div class="multimedia--carrusel__video video-categoria-educacion">
                 <iframe src="https://www.youtube.com/embed/Mh4f9AYRCZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h4><b>Caso Aymeé Elizabeth</b></h4>
               </div>
-              <div class="multimedia--carrusel__video">
+              <div class="multimedia--carrusel__video video-categoria-testimonios">
+                <iframe src="https://www.youtube.com/embed/Mh4f9AYRCZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4><b>Caso Aymeé Elizabeth</b></h4>
+              </div>
+              <div class="multimedia--carrusel__video video-categoria-noticias">
                 <iframe src="https://www.youtube.com/embed/Mh4f9AYRCZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h4><b>Caso Aymeé Elizabeth</b></h4>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-5 multimedia--carrusel--filtros">
-            <div class="multimedia--carrusel--filtros__item">
-              <h5>CATEGORIA</h5><img src="../img/icon-filtro.svg">
+            <div class="multimedia--carrusel--filtros__item" id="filtro-guillermo">
+              <h5>Guillermo Nieto </h5><img src="../img/cat-1.svg">
             </div>
-            <div class="multimedia--carrusel--filtros__item">
-              <h5>CATEGORIA</h5><img src="../img/icon-filtro.svg">
+            <div class="multimedia--carrusel--filtros__item" id="filtro-educacion">
+              <h5>Educación cannábica</h5><img src="../img/cat-2.svg">
             </div>
-            <div class="multimedia--carrusel--filtros__item">
-              <h5>CATEGORIA</h5><img src="../img/icon-filtro.svg">
+            <div class="multimedia--carrusel--filtros__item" id="filtro-testimonios">
+              <h5>Testimonios</h5><img src="../img/cat-3.svg">
             </div>
-            <div class="multimedia--carrusel--filtros__item">
-              <h5>CATEGORIA</h5><img src="../img/icon-filtro.svg">
+            <div class="multimedia--carrusel--filtros__item" id="filtro-noticias">
+              <h5>Noticias</h5><img src="../img/cat-4.svg">
             </div>
           </div>
         </div>

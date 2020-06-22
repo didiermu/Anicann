@@ -29,13 +29,13 @@ body {
         }
 
         @mixin h4{
-            font-size:calc(16px + 19 * ((100vw - 1280px) / 1920));
-            line-height:calc(22px + 19 * ((100vw - 1280px) / 1920));
+            font-size:calc(16px + 10 * ((100vw - 1280px) / 1920));
+            line-height:calc(22px + 10 * ((100vw - 1280px) / 1920));
         }
 
         @mixin h6{
-            font-size:calc(14px + 10 * ((100vw - 1280px) / 1920));
-            line-height:calc(22px + 10 * ((100vw - 1280px) / 1920));
+            font-size:calc(14px + 6 * ((100vw - 1280px) / 1920));
+            line-height:calc(22px + 6 * ((100vw - 1280px) / 1920));
         }
 
         @mixin min{
@@ -76,7 +76,7 @@ body {
         //// HEADER
 
         .header{
-            height: 110px;
+            height: 90px;
             
             .container{
                 align-items: baseline;
@@ -116,11 +116,12 @@ body {
                     
                     li{
                         margin:0 15px 0 0;
-
+                        @include h4;
                     }
                 }
 
                 &--redes{
+                    margin: 0 !important;
                     img{
                         margin: 0 10px;
                     }
@@ -135,7 +136,8 @@ body {
         .home--hero {
             
             [class*="col-"]{
-                height: 650px;
+                height: calc(600px + 10 * ((100vw - 1280px) / 1920));
+                max-height: 650px;
             }
         }
 
@@ -147,6 +149,17 @@ body {
                 h5, a{
                     @include h5;
                 }
+
+                a{
+                    transition: .2s ease-in-out all;
+                    padding: 5px;
+                    border-radius: 5px;
+
+                    &:hover{
+                        color: $primario;
+                        background: rgba(#fff , $alpha:1);
+                    }
+                }
             }
 
             &--notas{
@@ -155,6 +168,11 @@ body {
                     height: 315px;
                     width: 100%;
                     max-width: 245px;
+                    transition: .3s ease-in-out;
+                    
+                    &:hover{
+                        transform: translateY(-10px);
+                    }
 
                     h4{
                         margin: 5px 0 15px;
@@ -197,6 +215,10 @@ body {
                     width: 145px;
                 }
             }
+        }
+
+        .home--about{
+            margin-bottom: 120px;
         }
 
         .home--cita{
@@ -245,6 +267,15 @@ body {
 
             &--cards{
                 align-items: flex-end;
+                $sizeApp: calc(400px + 100 * ((100vw - 1280px) / 1920));
+
+                img{
+                    transform: scale(1);
+                    width: $sizeApp;
+                    margin:20px auto 30px;
+                    margin-left: 100px;
+                }
+                
 
                 .col-lg-5{
                     padding: 0;
@@ -255,10 +286,35 @@ body {
                     padding-left: 50px;
                 }
 
+                svg {
+                    &.path1{
+                        transform: scale(.7) rotate(0) translate(-200px,140px);
+                        width: $sizeApp;
+                        margin-left: 100px;
+                    }
+                    &.path2{
+                        transform: scale(.6) rotate(0deg) translate(120px,-120px);
+                        width: $sizeApp;
+                        margin-left: 100px;
+                    }
+                }
+
+                &#app-industrial{
+                    svg{
+                        &.path1{
+                            transform: scale(.7) rotateY(180deg) translate(-120px,170px);
+                        }
+                        &.path2{
+                            transform: scale(.6) rotateY(180deg) translate(230px,-100px);
+                        }
+        
+                    }
+                }
+        
 
                 h4{
                     @include h2;
-                    margin:20px 0 200px;
+                    margin:20px 0 100px;
                 }
             }
         }
@@ -279,6 +335,15 @@ body {
                 &--links{
                     margin: 15px 0;
 
+                    a{
+                        transition: .3s ease-in-out;
+
+                        &:hover{
+                            
+                            transform: translateY(-5px);
+                        }
+                    }
+
                     h5{
                         @include h6;
                     }
@@ -288,13 +353,19 @@ body {
             
         }
 
-        #modal-newsletter{
+        #modal-newsletter, #modal-thankyou{
             form{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin: 30px 0;
                 justify-content: center;
+
+                p{
+                    flex: 0 0 100%;
+                    margin:  auto;
+                    text-align: center;
+                }
             }
 
             .cajaInput{
@@ -309,10 +380,7 @@ body {
             }
         
             .mancha{
-                width: 470px;
-                right: 0;
-                transform: rotateY(180deg) rotateZ(90deg) translate(70px,80px);
-                bottom: 0;
+                transform: rotateY(180deg) rotateZ(90deg) translate(170px,170px) scale(.6);
             }
 
             h5{
@@ -505,12 +573,14 @@ body {
         .multimedia--hero {
             
             [class*="col-"]{
-                height: 650px;
+                height: calc(600px + 10 * ((100vw - 1280px) / 1920));
+                max-height: 650px;
             }
         }
 
         .multimedia--carrusel{
-            margin-bottom: 60px;
+            
+            transform: translateY(-50px);
            
             &--videos{
                 order: 2;
@@ -539,8 +609,8 @@ body {
                     @include h1;
 
                     &:before, &:after{
-                        width: 70px;
-                        margin: 0 12px;
+                        width: 65px;
+                        margin: 0 5px;
                     }
                 }
                 
@@ -552,9 +622,11 @@ body {
                 margin-top: 0;
                 position: relative;
                 justify-content: space-evenly;
-                margin-bottom: 50px;
+                margin-bottom: 0px;
+                background: none;
 
                 &__item{
+                    background: #fff;
                     display: flex;
                     justify-content: center;
                     flex-direction: row-reverse;
@@ -569,20 +641,33 @@ body {
                     h5{
                         display: block;
                         position: absolute;
-                        overflow: hidden;
+                        text-align: center;
                         bottom: -30px;
                         height: 0;
+                        width: max-content;
+                        max-width: 130px;
                         opacity: 0;
                         transition: .3s ease-in-out all;
-                        @include h4;
+                        background: #fff;
+                        padding: 5px;
+                        border-radius: 5px;
+                        
+                        @include h6;
                     }
 
                     &:hover{
                         transform: translateY(-15px);
                         h5{
                             opacity: 1;
-                            height: 25px;
-                            
+                            height: 28px;
+                        }
+                    }
+
+                    &.filtroOn{
+                        transform: translateY(0px);
+                        h5{
+                            opacity: 1;
+                            height: 28px;
                         }
                     }
                 }
@@ -643,17 +728,25 @@ body {
                 &--buttons{
                     order:4;
                     align-items: center;
+                    margin-bottom: 0;
 
                     button{
                         width: 34px;
                         height: 34px;
                     }
+
                 }
 
                 &--filtros{
                     order:3;
                     margin-bottom: 0;
                     height: auto;
+                    position: inherit;
+
+                    &.minCat{
+                        flex: 0 0 33.333333% !important;
+                        max-width: 33.333333% !important;
+                    }
 
                     .multimedia--carrusel--filtros__item{
                         box-shadow: none;
@@ -665,6 +758,15 @@ body {
                     img{
                         max-width: 100%;
                         width: 100%;
+                    }
+
+                    .post-categories {
+                        list-style: none;
+                        padding: 0;
+    
+                        a{
+                            color: inherit;
+                        }
                     }
                 }
 
@@ -777,6 +879,47 @@ body {
             }
         }
 
+
+
+        .pagina-blog{
+            padding: 150px 0 50px;
+
+            &--title{
+               
+                h3{
+                    @include h1;
+                    &::before{
+                        width: 70px;
+                        top: 20px;
+                        left: -90px;
+                        position: relative;
+                        display: block;
+                    }
+                }
+                
+            }
+            
+            #rowHeader{
+                align-items: center;
+                margin: 0px 0 50px;
+                background: none;
+                justify-content: center;
+            }
+
+            #searchform{
+                margin-bottom: 0;
+            }
+
+            .articulos--notas--filtros{
+                margin: 0;
+            }
+
+            .articulos--notas--title h4 {
+                text-align: center;
+            }
+
+        }
+
         /// CONTACTO
 
         .contacto{
@@ -814,7 +957,28 @@ body {
                     transform: rotateY(0);
 
                     img{
-                        transform: scale(1.4) translateX(-50px);
+                        transform: scale(.9) translate(0,-120px) rotateY(180deg);
+                        border-radius: 50px;
+                    }
+                }
+
+                &--organigrama{
+                    order: 3;
+                    padding: 20px 0;
+                    margin-top: 10px;
+                    margin-bottom: -50px;
+                    transform:translate(0,-100px);
+                    border-top: 1px solid $primario;
+                    // border-bottom: 1px solid $primario;
+
+                    img{
+                        border-radius: 10px;
+                    }
+
+                    h3{
+                        @include linkFlecha;
+                        margin: 0;
+                        cursor: pointer;
                     }
                 }
             }
@@ -833,17 +997,36 @@ body {
             #mancha3{
                 transform: rotateY(0deg) rotateZ(-10deg) translate(-120px,0);
             }
+
+            #modal-organigrama{
+                .modal-body{
+                    padding: 0;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
         }
 
     }// 996
 
 
     @media (min-width:1366px) {
+
+        #modal-newsletter{
+            .mancha{
+                transform: rotateY(180deg) rotateZ(90deg) translate(170px,180px) scale(.6);
+            }
+        }
+
+
         .home--beneficios{
             &--copy{
                 max-width: 600px;
            }
         }
+        
 
         &.home{
             #mancha1{
@@ -982,12 +1165,42 @@ body {
     }//1366
 
 
+
+    @media (min-width:1440px){
+        .home--aplicacion{
+            &--cards{
+                $sizeApp: calc(500px + 100 * ((100vw - 1280px) / 1920));
+
+                img{
+                    width: $sizeApp;
+                    margin-left: 0;
+                }
+
+
+                svg {
+                    &.path1{
+                        width: $sizeApp;
+                        margin-left: 0;
+                    }
+                    &.path2{
+                        width: $sizeApp;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
     @media (min-width:1600px) {
         .home--beneficios{
             &--copy{
-                max-width: 700px;
+                max-width: 750px;
            }
         }
+
+        
 
         &.home{
             #mancha1{

@@ -1,11 +1,15 @@
 .home--hero {
     @include hero;
+
+    &--copy{
+        margin-top: 0px;
+    }
 }
 
 
 .home--noticias {
     // transform: translateY(-80px);
-    margin: -80px 0 40px;
+    margin: -70px 0 40px;
     
 
     &--title{
@@ -152,6 +156,7 @@
             width: 100%;
             height: 80px;
             position: absolute;
+            z-index: -1;
         }
 
         &:before{
@@ -205,6 +210,7 @@
     color: #fff;
     padding: 30px 0;
     position: relative;
+    
 
     h4{
         position: relative;
@@ -247,7 +253,7 @@
 
 
 .home--aplicacion{
-    padding: 30px 0;
+    padding: 30px 0 50px;
 
     h2{
         text-align: right;
@@ -274,7 +280,7 @@
         padding: 20px 0;
 
         img{
-            margin: 20px auto;
+            margin: 20px auto 30px;
 
             &.objetFade{
                 transform: scale(.8);
@@ -285,9 +291,35 @@
             }
         }
 
+        svg {
+            &.path1{
+                transform: scale(.7) rotate(0) translate(-90px,100px);
+            }
+            &.path2{
+                transform: scale(.6) rotate(0deg) translate(80px,-30px);
+                
+                path{
+                    transform: translate(-244px, -35px);
+                }
+            }
+            @include manchaline;
+        }
+
         h1{
             color: $secundario;
             text-transform: uppercase;
+        }
+
+        &#app-industrial{
+            svg{
+                &.path1{
+                    transform: scale(.7) rotateY(180deg) translate(-60px,100px);
+                }
+                &.path2{
+                    transform: scale(.6) rotateY(180deg) translate(100px,-30px);
+                }
+
+            }
         }
 
         [class*="col-"]{
@@ -337,7 +369,7 @@
 }
 
 
-#modal-newsletter{
+#modal-newsletter, #modal-thankyou{
     
     .modal-body{
         padding: 30px 30px 50px;
@@ -368,9 +400,10 @@
     }
 
     .mancha{
-        top: 60%;
-        right: -80%;
-        transform: scale(.5);
+        width: 470px;
+        right: 0;
+        transform: rotateY(180deg) rotateZ(80deg) translate(180px,270px) scale(.4);
+        bottom: 0;
     }
 }
 

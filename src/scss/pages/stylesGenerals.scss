@@ -10,6 +10,7 @@
     overflow-x: hidden;
 }
 
+
 h1 {
     @extend %h1;
 }
@@ -64,6 +65,10 @@ a{
 
 .input{
     @include input;
+}
+
+textarea.input{
+    max-height: 70px;
 }
 
 .error-input{

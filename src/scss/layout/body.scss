@@ -5,6 +5,12 @@ html{
     opacity: 0;
 }
 
+html, body {
+	position:relative;
+	overflow-x:hidden;
+}
+
+
 body {
 
     @import "header";

@@ -51,11 +51,42 @@ html(lang='es')
 
 
                     .col-12.col-lg-5.contacto--section--back
-                        img.img-fluid(src="../img/back-contacto.png", alt="")
+                        img.img-fluid.d-none.d-lg-block(src="../img/back-contacto2.jpg", alt="")
 
-                .row
-                    .col-12.contacto--section--organigrama
-                        h2 ORGANIGRAMA
+                
+                    .col-12.col-lg-11.contacto--section--organigrama
+                        h3.d-none.d-lg-block(data-toggle="modal" data-target="#modal-organigrama") Conoce el organigrama
+                        img.img-fluid.d-lg-none(src="../img/organigrama.jpg", alt="")
+
+
+        .modal.fade#modal-organigrama(tabindex='-1' role='dialog')
+            .modal-dialog.modal-dialog-centered.modal-md(role='document')
+                .modal-content
+                    .modal-header
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            img(src="../img/icon-closes-green.svg", alt="",aria-hidden='true')
+
+                    .modal-body
+                        .row.justify-content-center
+                            .col-12
+                                img.img-fluid(src="../img/organigrama.jpg", alt="")
+
+        .modal.fade#modal-thankyou(tabindex='-1' role='dialog')
+            .modal-dialog.modal-dialog-centered.modal-xl(role='document')
+                .modal-content
+                    .modal-header
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            img(src="../img/icon-closes-green.svg", alt="",aria-hidden='true')
+
+                    .modal-body
+                        .row.justify-content-center
+                            .col-12.col-lg-10
+                                h3 
+                                    b ¡Gracias!
+                                h5 En breve recibirás más noticias de nosotros
+
+                        .mancha
+                            img.img-fluid.mancha1(src="../img/mancha1.svg", alt="")
+                            img.img-fluid.mancha2(src="../img/mancha2.svg", alt="")
                             
-
         include includes/footer.pug
